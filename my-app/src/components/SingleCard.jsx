@@ -33,11 +33,11 @@ export const SingleCard = () => {
             items[prev].stat = "wrong"
             setItems([...items])
             setTimeout(() => {
-                items[current].stat = ""
-                items[prev].stat = ""
-                setItems([...items])
+                items[current].stat = "";
+                items[prev].stat = "";
+                setItems([...items]);
                 setPrev(-1)
-            },1000)
+            },1000);
         }
     }
 
@@ -49,8 +49,8 @@ export const SingleCard = () => {
         } else(
             check(id)
         )
-        items[id].stat = "active"
-        setItems([...items])
+        /* items[id].stat = "active"
+        setItems([...items]) */
     }
 
     return(
